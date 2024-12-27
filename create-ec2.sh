@@ -20,4 +20,5 @@ awslocal ec2 run-instances \
     --count 1 \
     --instance-type t3.nano \
     --key-name my-key \
-    --security-group-ids $SGID
+    --security-group-ids $SGID \
+    --user-data file://user_script.sh
